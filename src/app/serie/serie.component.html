@@ -1,0 +1,72 @@
+<!-- <div class="container">
+  <div class="table-responsive-sm">
+      <table class="table table-stripped">
+          <thead>
+               <tr>
+                   <th scope="col">#</th>
+                   <th scope="col">Nombre</th>
+                   <th scope="col">Canal</th>
+                   <th scope="col">Temporadas</th>
+               </tr>
+          </thead>
+          <tbody id="series">
+            <tr *ngFor="let s of series">
+              <td>
+                <dd>{{s.id}}</dd>
+              </td>
+              <td>
+                <dd>{{s.name}}</dd>
+              </td>
+              <td>
+                <dd>{{s.channel}}</dd>
+              </td>
+              <td>
+                <dd>{{s.seasons}}</dd>
+              </td>
+            </tr>
+          </tbody>
+      </table>
+      <div>
+        <p>Promedio de temporadas: <span id="promTemporadas">{{calcularPromedioTemporadas(series)}}</span></p>
+      </div>
+  </div>
+</div> -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col">
+      <div class="table-responsive-sm">
+          <table class="table table-stripped">
+            <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Canal</th>
+                  <th scope="col">Temporadas</th>
+                </tr>
+            </thead>
+            <tbody id="series">
+              <tr *ngFor="let s of series" class="table-secondary">
+                <td>
+                  <dd>{{s.id}}</dd>
+                </td>
+                <td>
+                  <dd><a href="#" class="text-decoration-none">{{s.name}}</a></dd>
+                </td>
+                <td>
+                  <dd>{{s.channel}}</dd>
+                </td>
+                <td>
+                  <dd>{{s.seasons}}</dd>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div>
+            <p>Promedio de temporadas: <span id="promTemporadas">{{calcularPromedioTemporadas(series)}}</span></p>
+          </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+    </div>
+  </div>
+</div>
